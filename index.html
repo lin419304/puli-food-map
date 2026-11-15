@@ -243,6 +243,17 @@
                 </div>
             </div>
 
+            <!-- 新增店家 5：麗苑韓式料理 -->
+            <div class="card" onclick="openModal('modal-liyuan')">
+                <div class="card-img-container">
+                    <img src="images/liyuan.jpg" alt="麗苑海鮮煎餅">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge">超級好吃</span>
+                    <h3>麗苑 - 海鮮煎餅</h3>
+                </div>
+            </div>
+
         </div>
 
         <footer>
@@ -312,19 +323,11 @@
         </div>
     </div>
 
-    <script>
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'flex';
-        }
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        }
-    </script>
-
-</body>
-</html>
+    <!-- 新增彈跳詳細視窗：麗苑 -->
+    <div id="modal-liyuan" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-liyuan')">×</button>
+            <img src="images/liyuan.jpg" class="modal-img" alt="麗苑海鮮煎餅">
+            <span class="badge">超級好吃</span>
+            <h2>麗苑 - 海鮮煎餅</h2>
+            <div
