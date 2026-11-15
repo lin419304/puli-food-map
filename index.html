@@ -12,6 +12,8 @@
             --text-color: #333333;
             --tag-super: #ffede5;
             --tag-super-text: #d9480f;
+            --tag-normal: #e8f4fd;
+            --tag-normal-text: #1971c2;
             --border-color: #f0e6dc;
         }
         body {
@@ -96,6 +98,16 @@
             display: inline-block;
             background-color: var(--tag-super);
             color: var(--tag-super-text);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .badge-normal {
+            display: inline-block;
+            background-color: var(--tag-normal);
+            color: var(--tag-normal-text);
             padding: 2px 8px;
             border-radius: 10px;
             font-size: 0.75rem;
@@ -265,6 +277,65 @@
                 </div>
             </div>
 
+            <!-- 店家 7：囍粉 -->
+            <div class="card" onclick="openModal('modal-xifen')">
+                <div class="card-img-container">
+                    <img src="images/xifen.jpg" alt="囍粉番茄肥牛酸湯粉">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge">超級好吃</span>
+                    <h3>囍粉 - 番茄肥牛酸湯粉</h3>
+                </div>
+            </div>
+
+            <!-- 店家 8：李仔哥爌肉飯 -->
+            <div class="card" onclick="openModal('modal-lizige')">
+                <div class="card-img-container">
+                    <img src="images/lizige.jpg" alt="李仔哥爌肉飯">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge">超級好吃</span>
+                    <h3>李仔哥 - 爌肉飯</h3>
+                </div>
+            </div>
+
+            <!-- 新增店家 11：樹人夜市 - 門口的梅亭 -->
+            <div class="card" onclick="openModal('modal-meiting')">
+                <div class="card-img-container">
+                    <img src="images/meiting.jpg" alt="樹人夜市門口的梅亭">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge">超級好吃</span>
+                    <h3>樹人夜市 - 門口的梅亭</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 分類：普通好吃 -->
+        <h2 class="section-title" style="color: #1971c2; border-color: #1971c2;">👍 普通好吃</h2>
+        <div class="grid">
+            <!-- 店家 9：胡國雄古早麵 -->
+            <div class="card" onclick="openModal('modal-huguo')">
+                <div class="card-img-container">
+                    <img src="images/huguo.jpg" alt="胡國雄古早麵">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge-normal">普通好吃</span>
+                    <h3>胡國雄古早麵 - 紹興蛋</h3>
+                </div>
+            </div>
+
+            <!-- 店家 10：樂逗早午餐 -->
+            <div class="card" onclick="openModal('modal-leduo')">
+                <div class="card-img-container">
+                    <img src="images/leduo.jpg" alt="樂逗早午餐">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge-normal">普通好吃</span>
+                    <h3>樂逗 - 多樣品項早午餐</h3>
+                </div>
+            </div>
         </div>
 
         <footer>
@@ -322,7 +393,7 @@
     <div id="modal-squid" class="modal">
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal('modal-squid')">×</button>
-            <img src="images/squid.jpg" class="modal-img" alt="樹人夜市魷魚">
+            <img src="images/squid.jpg" class="modal-img" alt="樹人夜市烤魷魚">
             <span class="badge">超級好吃</span>
             <h2>樹人夜市 - 烤魷魚</h2>
             <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮埔里樹人夜市</div>
@@ -355,12 +426,88 @@
             <img src="images/long.jpg" class="modal-img" alt="阿龍快炒">
             <span class="badge">超級好吃</span>
             <h2>阿龍快炒</h2>
-            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮同聲里南盛街88號 (埔里第三市場夜市)[cite: 13]</div>
-            <div class="info-item">🕒 <strong>營業時間：</strong>週一至週日 15:30–22:00[cite: 13]</div>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮同聲里南盛街88號 (埔里第三市場夜市)</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週一至週日 15:30–22:00</div>
             <div class="review">
                 <strong>個人評價：</strong>快炒類第一名！但是點餐稍微困難，沒有菜單，要看當下食材決定吃甚麼。不過跟店員說想要吃甚麼，店員會推薦作法，所以還是可以嘗試的。
             </div>
             <div class="recommend">👍 推薦：虱目魚皮湯、羊肉炒空心菜、蚵仔酥</div>
+        </div>
+    </div>
+
+    <div id="modal-xifen" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-xifen')">×</button>
+            <img src="images/xifen.jpg" class="modal-img" alt="囍粉番茄肥牛酸湯粉">
+            <span class="badge">超級好吃</span>
+            <h2>囍粉 - 番茄肥牛酸湯粉</h2>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮北門里北環路116號</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週一至週日 11:00–14:00、17:00–20:00</div>
+            <div class="review">
+                <strong>個人評價：</strong>我不吃辣，所以我只吃過這個品項，但是光是這個我就很喜歡！酸酸的湯很好喝，而且這一碗一個女生可以吃飽的！
+            </div>
+            <div class="recommend">👍 推薦：番茄肥牛酸湯粉、金針菇（炸的，也很好吃！）</div>
+        </div>
+    </div>
+
+    <div id="modal-lizige" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-lizige')">×</button>
+            <img src="images/lizige.jpg" class="modal-img" alt="李仔哥爌肉飯">
+            <span class="badge">超級好吃</span>
+            <h2>李仔哥 - 爌肉飯</h2>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮北梅里信義路326號</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週一至週日 06:00–15:00</div>
+            <div class="review">
+                <strong>個人評價：</strong>一定要內用！外帶就是便當會貴10塊。喜歡吃肥肉的人一定要吃，吃一口爌肉再配上一口飯，簡直頂級！！如果食量大可以單點排骨，排骨也很好吃！
+            </div>
+            <div class="recommend">👍 推薦：爌肉飯（內用）、排骨（單點）</div>
+        </div>
+    </div>
+
+    <!-- 新增彈跳詳細視窗：樹人夜市 - 門口的梅亭 -->
+    <div id="modal-meiting" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-meiting')">×</button>
+            <img src="images/meiting.jpg" class="modal-img" alt="樹人夜市門口的梅亭">
+            <span class="badge">超級好吃</span>
+            <h2>樹人夜市 - 門口的梅亭</h2>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮埔里樹人夜市 (夜市門口)</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週三 18:00–00:00</div>
+            <div class="review">
+                <strong>個人評價：</strong>這家真的很愛！去樹人夜市真的就是去吃這家跟魷魚的，烤得真的很好吃！<br><span style="font-size: 0.85rem; color: #888; margin-top: 5px; display: block;">（註：雞腿捲表現比較普通）</span>
+            </div>
+            <div class="recommend">👍 推薦：雞皮、雞屁股、雞翅<br>⚠️ 偏普通：雞腿捲</div>
+        </div>
+    </div>
+
+    <div id="modal-huguo" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-huguo')">×</button>
+            <img src="images/huguo.jpg" class="modal-img" alt="胡國雄古早麵">
+            <span class="badge-normal">普通好吃</span>
+            <h2>胡國雄古早麵 - 紹興蛋</h2>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮西門里仁愛路319號</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週日至週五 10:00–19:30｜週六 10:00–20:00</div>
+            <div class="review">
+                <strong>個人評價：</strong>就是傳統美食，而且很多觀光客去吃。整體還算不錯，紹興蛋好吃，豆腐也好吃，可以去嘗試！
+            </div>
+            <div class="recommend">👍 推薦：紹興蛋、豆腐、粿條麵</div>
+        </div>
+    </div>
+
+    <div id="modal-leduo" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-leduo')">×</button>
+            <img src="images/leduo.jpg" class="modal-img" alt="樂逗早午餐">
+            <span class="badge-normal">普通好吃</span>
+            <h2>樂逗 - 多樣品項早午餐</h2>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮西門里仁愛路176號</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週一、週三至週日 08:30–23:30 (週二公休)</div>
+            <div class="review">
+                <strong>個人評價：</strong>這家就是適合想吃不同種類的一群人一起去吃！這家勝在品項真的很多，連一人火鍋都有，可以去嘗試看看。<br><span style="font-size: 0.85rem; color: #888; margin-top: 5px; display: block;">（備註：照片中的星巴克是當天跟朋友去買買一送一順便帶上的，請忽略它唷～）</span>
+            </div>
+            <div class="recommend">👍 推薦：品項非常豐富多元，適合多人聚餐</div>
         </div>
     </div>
 
