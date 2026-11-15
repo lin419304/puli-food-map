@@ -243,7 +243,7 @@
                 </div>
             </div>
 
-            <!-- 新增店家 5：麗苑韓式料理 -->
+            <!-- 店家 5：麗苑 -->
             <div class="card" onclick="openModal('modal-liyuan')">
                 <div class="card-img-container">
                     <img src="images/liyuan.jpg" alt="麗苑海鮮煎餅">
@@ -251,6 +251,17 @@
                 <div class="card-title-area">
                     <span class="badge">超級好吃</span>
                     <h3>麗苑 - 海鮮煎餅</h3>
+                </div>
+            </div>
+
+            <!-- 店家 6：阿龍快炒 -->
+            <div class="card" onclick="openModal('modal-long')">
+                <div class="card-img-container">
+                    <img src="images/long.jpg" alt="阿龍快炒">
+                </div>
+                <div class="card-title-area">
+                    <span class="badge">超級好吃</span>
+                    <h3>阿龍快炒 - 綜合快炒</h3>
                 </div>
             </div>
 
@@ -323,11 +334,49 @@
         </div>
     </div>
 
-    <!-- 新增彈跳詳細視窗：麗苑 -->
     <div id="modal-liyuan" class="modal">
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal('modal-liyuan')">×</button>
             <img src="images/liyuan.jpg" class="modal-img" alt="麗苑海鮮煎餅">
             <span class="badge">超級好吃</span>
             <h2>麗苑 - 海鮮煎餅</h2>
-            <div
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮北門里北澤街156號</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週一至週日 11:00–14:00、17:00–20:30 (週二公休)</div>
+            <div class="review">
+                <strong>個人評價：</strong>我個人認為埔里的韓式料理中最喜歡的就是麗苑！而且麗苑可以有小菜吃到飽，口味我蠻喜歡的，份量大，一個鍋基本上就吃飽了。
+            </div>
+            <div class="recommend">👍 推薦：海鮮煎餅、起司年糕</div>
+        </div>
+    </div>
+
+    <div id="modal-long" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-long')">×</button>
+            <img src="images/long.jpg" class="modal-img" alt="阿龍快炒">
+            <span class="badge">超級好吃</span>
+            <h2>阿龍快炒</h2>
+            <div class="info-item">📍 <strong>地址：</strong>545南投縣埔里鎮同聲里南盛街88號 (埔里第三市場夜市)[cite: 13]</div>
+            <div class="info-item">🕒 <strong>營業時間：</strong>週一至週日 15:30–22:00[cite: 13]</div>
+            <div class="review">
+                <strong>個人評價：</strong>快炒類第一名！但是點餐稍微困難，沒有菜單，要看當下食材決定吃甚麼。不過跟店員說想要吃甚麼，店員會推薦作法，所以還是可以嘗試的。
+            </div>
+            <div class="recommend">👍 推薦：虱目魚皮湯、羊肉炒空心菜、蚵仔酥</div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
